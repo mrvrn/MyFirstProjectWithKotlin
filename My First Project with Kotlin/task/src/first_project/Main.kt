@@ -12,4 +12,13 @@ fun main() {
     }
 
     println("Income: $total")
+
+    println("Staff expenses:")
+    val staffExpenses = readln().toDouble()
+
+    println("Other expenses:")
+    val otherExpenses = readln().toDouble()
+
+    val netIncome = total - staffExpenses - otherExpenses
+    println("Net income: $netIncome")
 }
